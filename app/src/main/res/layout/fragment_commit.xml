@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:elevation="3dp"
+    android:background="@drawable/editsharp2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/DotActivity_tv7"
+            android:textColor="@color/text_gray3"
+            android:textSize="17sp" />
+
+        <EditText
+            android:inputType="textNoSuggestions"
+            android:id="@+id/commit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15.25dp"
+            android:layout_weight="1"
+            android:hint="@string/DotActivity_tv8"
+            android:maxLength="14"
+            android:textColor="@color/text_gray3"
+            android:textColorHint="@color/text_gray"
+            android:maxLines="1"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="4"-->
+            <!--android:gravity="center"-->
+            <!--android:text="区  域"-->
+            <!--android:textColor="@color/text_gray3"-->
+            <!--android:textSize="17sp" />-->
+
+        <!--<EditText-->
+            <!--android:textSize="15.25dp"-->
+            <!--android:id="@+id/commit_adress"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:hint="点击选择区域"-->
+            <!--android:textColor="@color/text_gray3"-->
+            <!--android:textColorHint="@color/text_gray"-->
+            <!--android:maxLines="1"-->
+            <!--android:padding="10dp" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:layout_weight="1"
+            android:id="@+id/commit_out"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="@string/DotActivity_tv9"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:qmui_backgroundColor="@color/darkblue1"
+            app:qmui_borderColor="@color/darkblue1"
+            app:qmui_radiusBottomLeft="5dp"/>
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:layout_weight="1"
+            android:id="@+id/commit_save"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:text="@string/DotActivity_tv10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:qmui_backgroundColor="@color/green3"
+            app:qmui_borderColor="@color/green3"
+            app:qmui_radiusBottomRight="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

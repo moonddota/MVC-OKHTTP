@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sjianjun:threadSchedule-1.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/threadSchedule-1.3.0.aar/c7f706c40d73a142cd1ea9c3ae00de6e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/threadSchedule-1.3.0.aar/c7f706c40d73a142cd1ea9c3ae00de6e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sjianjun/threadSchedule/1.3.0/ee23893269f9bc0008fb691d07ffaa4b565ac122/threadSchedule-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

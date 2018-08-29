@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/item_sync_onley"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="start"
+            android:elevation="3dp"
+            android:src="@mipmap/ic_sync_only" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="@string/StartActivity_tv30" />
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="2017-11-36 14：16：14" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:background="@color/tm_black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="@string/StartActivity_tv31" />
+
+        <TextView
+            android:id="@+id/item_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:text="四川省——成都市-高兴区" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:background="@color/tm_black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="@string/hand_mode10" />
+
+        <TextView
+            android:id="@+id/item_lon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center|right" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:background="@color/tm_black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="@string/hand_mode9" />
+
+        <TextView
+            android:id="@+id/item_lat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center|right" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="25dp"
+        android:background="@color/tm_black" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/white"
+        android:paddingLeft="25dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="@string/hand_mode11" />
+
+        <TextView
+            android:id="@+id/item_alt"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="center|right" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="@color/tm_black" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/item_setting"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/StartActivity_tv32"
+        android:textColor="@color/green3" />
+</LinearLayout>

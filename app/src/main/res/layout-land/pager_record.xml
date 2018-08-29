@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@drawable/editsharp2"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:elevation="5dp"
+                android:gravity="center|left"
+                android:text="0.00"
+                android:textColor="@color/text_gray3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/dot_tv_area_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:elevation="5dp"
+                android:text="@string/recordadapter_tv1"
+                android:textColor="@color/text_gray3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/but_backout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/DotActivity_tv2"
+            android:textColor="@color/text_gray3"
+            android:textSize="14sp"
+            app:qmui_backgroundColor="@color/white"
+            app:qmui_borderColor="@color/white" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/but_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="@string/hand_mode6"
+            android:textColor="@color/green3"
+            android:textSize="14sp"
+            app:qmui_backgroundColor="@color/white"
+            app:qmui_borderColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.skylin.uav.drawforterrain.views.ViewPager
+        android:id="@+id/viewpager_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_boundary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_boundary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/DotActivity_tv4"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/group_boundary"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/green3" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_obstacle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_obstacle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/DotActivity_tv5"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/group_obstacle"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/green3"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/record_point"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="@string/DotActivity_tv6"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/green3"/>
+</LinearLayout>

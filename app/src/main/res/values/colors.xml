@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tm">#00000000</color>
+    <color name="tm1">#50000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green2">#47d699</color>
+    <color name="green3">#8ec1a0</color>
+    <color name="green4">#f0fff3</color>
+    <color name="red">#ff0000</color>
+    <color name="red1">#ca7676</color>
+    <color name="red2">#dd8181</color>
+    <color name="bbc2bb">#bfbfbf</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_gray2">#666666</color>
+    <color name="text_gray3">#333333</color>
+    <color name="text_gray4">#c0c0c0</color>
+    <color name="text_gray5">#888888</color>
+    <color name="darkblue">#4f7886</color>
+    <color name="darkblue1">#3a5b67</color>
+    <color name="tm_black">#1a000000</color>
+    <color name="tm_black1">#ebebeb</color>
+
+    <color name="transparent">#4c000000</color>
+
+    <color name="ll_background">#eef2f3</color>
+    <color name="ll_background3">#e3e3e3</color>
+
+
+
+</resources>

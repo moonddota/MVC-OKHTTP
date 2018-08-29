@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/home_map_replace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/navigatio_tv_rtk"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/more"
+                    android:elevation="3dp" />
+
+                <ImageButton
+                    android:id="@+id/map_model"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/icon_trans"
+                    android:elevation="3dp" />
+
+                <ImageButton
+                    android:id="@+id/map_location"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/icon_location_map"
+                    android:elevation="3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:clickable="false"
+                android:id="@+id/lldeleat"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/editsharp2"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:onClick="onDeleatBackClick"
+                    android:id="@+id/deleat_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deleat_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="21dp"
+                        android:src="@mipmap/select" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/bbc2bb" />
+
+                <TextView
+                    android:id="@+id/start_amend"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:text="@string/DotActivity_tv15"
+                    android:textColor="@color/green3"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/start_work"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="3dp"
+                android:gravity="center"
+                android:text="@string/startActivity_but"
+                android:textColor="@color/green3"
+                android:textSize="16sp"
+                app:qmui_backgroundColor="@color/white"
+                app:qmui_borderColor="@color/white"
+                app:qmui_radiusBottomLeft="5dp"
+                app:qmui_radiusBottomRight="5dp"
+                app:qmui_radiusTopLeft="5dp"
+                app:qmui_radiusTopRight="5dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

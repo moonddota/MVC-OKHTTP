@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--<LinearLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <FrameLayout
+
+        android:id="@+id/map_hand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_weight="1"-->
+    <!--android:id="@+id/ceshi_rc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+    <!--</LinearLayout>-->
+
+
+    <include layout="@layout/topbar" />
+
+    <View
+        android:id="@+id/hand_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shap_view"
+        android:src="@mipmap/icon_location"
+        android:visibility="gone" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/scanBtn"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="@string/DeviceListActivity_tv8"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:qmui_backgroundColor="@color/green3"
+        app:qmui_borderColor="@color/green3"
+        app:qmui_radiusBottomLeft="5dp"
+        app:qmui_radiusBottomRight="5dp"
+        app:qmui_radiusTopLeft="5dp"
+        app:qmui_radiusTopRight="5dp" />
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/but_commit"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="@string/DotActivity_tv1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:qmui_backgroundColor="@color/green3"
+        app:qmui_borderColor="@color/green3"
+        app:qmui_radiusBottomLeft="5dp"
+        app:qmui_radiusBottomRight="5dp"
+        app:qmui_radiusTopLeft="5dp"
+        app:qmui_radiusTopRight="5dp" />
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/but_backout"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="130dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="@string/DotActivity_tv2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:qmui_backgroundColor="@color/red1"
+        app:qmui_borderColor="@color/red1"
+        app:qmui_radiusBottomLeft="5dp"
+        app:qmui_radiusBottomRight="5dp"
+        app:qmui_radiusTopLeft="5dp"
+        app:qmui_radiusTopRight="5dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_map_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="240dp"
+        android:layout_marginRight="10dp"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/map_model"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@mipmap/icon_trans"-->
+        <!--android:elevation="3dp" />-->
+
+        <ImageButton
+            android:id="@+id/location_dot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/icon_location_map"
+            android:elevation="3dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dot_tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="29.4dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dot_tv_area_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:text="@string/recordadapter_tv1"
+            android:textColor="@color/white"
+            android:textSize="16.3dp" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/fragment_record"
+        layout="@layout/fragment_record"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/fragment_commit"
+        layout="@layout/fragment_commit"
+        android:visibility="gone" />
+
+</FrameLayout>

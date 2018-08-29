@@ -1,0 +1,265 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Mapping</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="title_other_devices">Other Available Devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+
+    <!-- 动画 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox" tools:ignore="NewApi">
+        <item name="android:colorControlActivated" tools:ignore="NewApi">@color/green2</item>
+        <item name="android:colorControlNormal">#00000000</item>
+    </style>
+
+
+     <style name="dialogstyle">
+         <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+         <!-- 指定显示的动画xml -->
+         <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+         <!-- 指定消失的动画xml -->
+     </style>
+
+    <!-- StartActivity -->
+    <string name="abd">的撒多撒</string>
+    <string name="startActivity_tab_tv1">RTK Surveyor</string>
+    <string name="startActivity_tab_tv2">GPS Surveyor</string>
+    <string name="startActivity_tab_tv3">GPS UAV</string>
+    <string name="startActivity_tab_tv4">Manual</string>
+    <string name="startActivity_but">to working</string>
+
+    <!-- Toast -->
+    <string name="toast_spl_un">Create database fail!</string>
+    <string name="toast_1">Connect Peripheral </string>
+    <string name="toast_2">not support channel switch in this mode </string>
+    <string name="toast_3">connect peripheral </string>
+    <string name="toast_4">this device is not roverstation mode, change mode using "station setting" page .</string>
+    <string name="toast_5">conneting fail, please try again</string>
+    <string name="toast_6">save channel fail, please try again latter</string>
+    <string name="toast_7">save channel success </string>
+    <string name="toast_8">up to ten obstacles in a task </string>
+    <string name="toast_9">mast to have three Boundary marker </string>
+    <string name="toast_10">you mast use three point to record a obstacles area</string>
+    <string name="toast_11">please to wait peripheral to boot </string>
+    <string name="toast_12">location Locking failure，please try again later.</string>
+    <string name="toast_13">you cant mark location point in no fly zone.</string>
+    <string name="toast_14">near by the last Boundary marker </string>
+    <string name="toast_15">near by other obstacles </string>
+    <string name="toast_16">overlaps with other obstacles </string>
+    <string name="toast_17">input the task name </string>
+    <string name="toast_18">please try again  </string>
+    <string name="toast_19">success  </string>
+    <string name="toast_20">delete success </string>
+    <string name="toast_21"> Network unavailable "</string>
+    <string name="toast_22"> the authentication fails and try again latter.</string>
+    <string name="toast_23">Please log in "SKYIN SERVICE"</string>
+    <string name="toast_24">bluetooth is power down </string>
+    <string name="toast_25">bluetooth connecting fail</string>
+    <string name="toast_26">connection close fail; </string>
+    <string name="toast_27">USB disconnecting</string>
+    <string name="toast_28">USB connected </string>
+    <string name="toast_29">USB disconnect</string>
+
+    <!-- RecordAdapter -->
+    <string name="recordadapter_tv1">hectare</string>
+    <string name="recordadapter_tv2">area / hectare</string>
+    <string name="recordadapter_tv3">location</string>
+
+    <!-- drawerlayout -->
+    <string name="drawerlayout_tv1">Morning,</string>
+    <string name="drawerlayout_tv2">GoodMoring,</string>
+    <string name="drawerlayout_tv3">GoodAfternoon,</string>
+    <string name="drawerlayout_tv4">GoodEvening,</string>
+    <string name="drawerlayout_tv5">Main Page</string>
+    <string name="drawerlayout_tv6">Connect the peripheral</string>
+    <string name="drawerlayout_tv7">mapping record</string>
+    <string name="drawerlayout_tv8">setting</string>
+    <string name="drawerlayout_tv9">Quit task ?</string>
+
+    <!-- topbar -->
+    <string name="topbar_tv1">Not connected</string>
+
+    <!-- continuePopu -->
+    <string name="continuePopu_tv1">Remind</string>
+    <string name="continuePopu_tv2">if you start a new task, the current task will be lost .are you confirm ?</string>
+    <string name="continuePopu_tv3">start new task </string>
+    <string name="continuePopu_tv4">continue working </string>
+    <string name="continuePopu_tv5">your peripheral had new  firmware, using "Firmware Controller" to update it.</string>
+    <string name="continuePopu_tv6">understand</string>
+    <string name="continuePopu_tv7">Are you confrim to delete this record ?</string>
+    <string name="continuePopu_tv8">quit</string>
+    <string name="continuePopu_tv9">OK </string>
+    <string name="continuePopu_tv10">confrim </string>
+    <string name="continuePopu_tv11"> Are you confrim to quit this task?</string>
+    <string name="continuePopu_tv12">cancel</string>
+    <string name="continuePopu_tv13">if you start a new task, the current task will be lost .are you confirm ?</string>
+    <string name="continuePopu_tv14">continue working</string>
+    <string name="continuePopu_tv15">confirm </string>
+    <string name="continuePopu_tv16">try again</string>
+
+    <!--ParticularsActivity-->
+    <string name="ParticularsActivity_tv1">wait Reading the Peripherals information to success!</string>
+    <string name="ParticularsActivity_tv2">Device mode error</string>
+    <string name="ParticularsActivity_tv3">not connected</string>
+
+    <!--MappingRecordActivity-->
+    <string name="MappingRecordActivity_tv1">Mapping record</string>
+
+    <!--EquipmentActivity-->
+    <string name="EquipmentActivity_tv1">peripheral connect</string>
+    <string name="EquipmentActivity_tv2">connecting</string>
+    <string name="EquipmentActivity_tv3">connected</string>
+    <string name="EquipmentActivity_tv4">disconnect</string>
+    <string name="EquipmentActivity_tv5">Connect</string>
+    <string name="EquipmentActivity_tv6">Channel</string>
+
+    <!--SetChannelActivity-->
+    <string name="SetChannelActivity_tv1">Channel</string>
+    <string name="SetChannelActivity_tv2">Last Channel 0</string>
+    <string name="SetChannelActivity_tv3">save channel</string>
+
+    <!--OsmFragment-->
+    <string name="OsmFragment_tv1">Get weather and air condition at your precise location </string>
+    <string name="OsmFragment_tv2">Turn on location service to allow "XXXX" to Determine your location </string>
+    <string name="OsmFragment_tv3">Open GPS</string>
+
+
+    <!--DotActivity-->
+
+    <string name="DotActivity_tv1">Save</string>
+    <string name="DotActivity_tv2">UNDO</string>
+    <string name="DotActivity_tv3">peripheral Error!</string>
+    <string name="DotActivity_tv4">boundary</string>
+    <string name="DotActivity_tv5">obstacles</string>
+    <string name="DotActivity_tv6">Mark</string>
+    <string name="DotActivity_tv7">task name</string>
+    <string name="DotActivity_tv8">Input task name</string>
+    <string name="DotActivity_tv9">cancel</string>
+    <string name="DotActivity_tv10">confirm </string>
+    <string name="DotActivity_tv11">area / (Chinese MU) </string>
+    <string name="DotActivity_tv12">back</string>
+    <string name="DotActivity_tv13">more</string>
+    <string name="DotActivity_tv14">upload....</string>
+    <string name="DotActivity_tv15">revise</string>
+    <string name="DotActivity_tv16">insert marker before this</string>
+    <string name="DotActivity_tv17">Touch you want delete marker</string>
+    <string name="DotActivity_tv18">RTK No fix</string>
+    <string name="DotActivity_tv19">next</string>
+
+    <!--LoginActivity-->
+    <string name="LoginActivity_tv1">Downloading...</string>
+    <string name="LoginActivity_tv2">download complete</string>
+    <string name="LoginActivity_tv3"> download complete, installing...</string>
+    <string name="LoginActivity_tv4">without team！</string>
+    <string name="LoginActivity_tv5">Did you not join in any team, using "SKYLIN SERVICE" APP to join.</string>
+    <string name="LoginActivity_tv6">Open “SKYLIN SERVICE”</string>
+    <string name="LoginActivity_tv7">Unknown user information,using "SKYLIN SERVICE" to check it,</string>
+    <string name="LoginActivity_tv8">Error, restart the APP.</string>
+    <string name="LoginActivity_tv9">Update</string>
+    <string name="LoginActivity_tv10">having new update, downloading？</string>
+    <string name="LoginActivity_tv11">Download "SKYLIN SERVICE"</string>
+    <string name="LoginActivity_tv12">Using other APP</string>
+    <string name="LoginActivity_tv13">Please using "SKYLIN SERVICE" app to log in your account</string>
+    <string name="LoginActivity_tv14">Re enter to exit</string>
+
+    <!--DeviceListActivity-->
+    <string name="DeviceListActivity_tv1">not connected</string>
+    <string name="DeviceListActivity_tv2">Bluetooth connection</string>
+    <string name="DeviceListActivity_tv3">Nothing</string>
+    <string name="DeviceListActivity_tv4">scanning</string>
+    <string name="DeviceListActivity_tv5">My device</string>
+    <string name="DeviceListActivity_tv6"> Other device</string>
+    <string name="DeviceListActivity_tv7">APP requires Bluetooth, Please enable Bluetooth to continue using this app</string>
+    <string name="DeviceListActivity_tv8">Bluetooth</string>
+    <string name="DeviceListActivity_tv9">OK</string>
+    <string name="DeviceListActivity_tv10">Locking failure，please try again later.</string>
+
+    <!--BlueBase-->
+    <string name="BlueBase_tv1">Can not initializing bluetooth</string>
+    <string name="BlueBase_tv2">Turn on bluetooth</string>
+    <string name="BlueBase_tv3">Lost Bluetooth conection</string>
+    <string name="BlueBase_tv4">Select</string>
+    <string name="BlueBase_tv5">amend</string>
+    <string name="BlueBase_tv6">delete</string>
+    <string name="BlueBase_tv7">cancel</string>
+    <string name="BlueBase_tv8">no record of tapping</string>
+
+
+    <string name="UAVActivity_tv13">Unconnected aircraft</string>
+    <string name="blueconnectActiivtyTV1">Equipment List</string>
+
+    <string name="hand_mode1">Device_Hand</string>
+    <string name="hand_mode2">Device_Base</string>
+    <string name="hand_mode3">satellites</string>
+    <string name="hand_mode4">precision</string>
+    <string name="hand_mode5">RTK</string>
+    <string name="hand_mode6">NextStep</string>
+    <string name="hand_mode7">PreviousStep</string>
+    <string name="hand_mode8">Connection is broken</string>
+    <string name="hand_mode9">Latitudes</string>
+    <string name="hand_mode10">Longitude</string>
+    <string name="hand_mode11">Altitude</string>
+
+
+    <string name="ConnectBLEActivity_tv1">Working mode</string>
+    <string name="ConnectBLEActivity_tv3">Set up a fixed position and transfer coordinate data</string>
+    <string name="ConnectBLEActivity_tv5">Measure the boundary of the field and identify obstacles to the field</string>
+    <string name="ConnectBLEActivity_tv6">Channel settings</string>
+    <string name="ConnectBLEActivity_tv8">Make sure there are no UAVs using RTK stations NOW</string>
+    <string name="ConnectBLEActivity_tv19">Make sure there are no same channels using RTK stations NOW</string>
+    <string name="ConnectBLEActivity_tv9">Setting up channel to</string>
+    <string name="ConnectBLEActivity_tv10">Channel</string>
+    <string name="ConnectBLEActivity_tv11">Fail to channel setting</string>
+    <string name="ConnectBLEActivity_tv12">Successful channel setting</string>
+    <string name="ConnectBLEActivity_tv16">Refresh</string>
+    <string name="ConnectBLEActivity_tv17">Data refresh timeout, restart APP or device</string>
+    <string name="ConnectBLEActivity_tv20">Swithing to RTK station</string>
+    <string name="ConnectBLEActivity_tv13">Mode switch timeout</string>
+    <string name="ConnectBLEActivity_tv14">Mode switch successful</string>
+    <string name="ConnectBLEActivity_tv15">Mode switch successful</string>
+    <string name="ConnectBLEActivity_tv21">Make sure there are no UAVs using RTK stations NOW</string>
+    <string name="ConnectBLEActivity_tv22">Swithing to handheld mapping instrument</string>
+    <string name="LocationActivity_tv2">history</string>
+    <string name="SetLocationActivity_tv5">Set coordinates</string>
+    <string name="SetLocationActivity_tv6">Please enter full latitude and longitude</string>
+    <string name="SetLocationActivity_tv9">clearing</string>
+    <string name="SetLocationActivity_tv13">Timeout</string>
+    <string name="SetLocationActivity_tv14">Success</string>
+    <string name="LocationActivity_tv10">Loss of location coordinates，Fail to save</string>
+    <string name="HistoryActivity_tv4">Are you sure you want to set this coordinate to the RTK station?</string>
+    <string name="HistoryActivity_tv1">Setting up now</string>
+    <string name="HistoryActivity_tv5">Set timeout</string>
+    <string name="HistoryActivity_tv6">Successful setting</string>
+    <string name="StartActivity_tv30">taskname</string>
+    <string name="StartActivity_tv31">location</string>
+    <string name="StartActivity_tv32">Set to base station</string>
+    <string name="StartActivity_tv33">Reading data</string>
+    <string name="StartActivity_tv34">check update</string>
+
+
+
+
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green3"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <com.skylin.uav.drawforterrain.views.MarqueeTextView
+        android:id="@+id/navigatio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text=" 马冬梅"
+        android:textColor="@color/white"
+        android:textSize="21.79sp" />
+
+    <com.skylin.uav.drawforterrain.views.MarqueeTextView
+        android:id="@+id/navigatio_tid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="植物保小分队"
+        android:textColor="#ccffffff"
+        android:textSize="17.43sp" />
+
+    <FrameLayout
+        android:background="@color/green4"
+        android:id="@+id/navigatio_ch_rtk"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_gravity="center|start"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/navigatio_im_rtk"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/rtk_device_green" />
+
+        <TextView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_text_rtk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/startActivity_tab_tv1"
+            android:textColor="@color/green3"
+            android:textSize="17.43sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigatio_ch_gps"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_im_gps"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/gps_device" />
+
+        <TextView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_text_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/startActivity_tab_tv2"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigatio_ch_uav"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_im_uav"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/gps_plane" />
+
+        <TextView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_text_uav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/startActivity_tab_tv3"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigatio_ch_hand"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_im_hand"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/manual" />
+
+        <TextView
+            android:layout_gravity="center|start"
+            android:id="@+id/navigatio_text_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/startActivity_tab_tv4"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|start"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/versionNmae_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FMP农田测绘1.4.0"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/renewal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/StartActivity_tv34"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:visibility="invisible"
+                android:id="@+id/renewal_show"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/renewal"
+                android:background="@drawable/shap_view" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,266 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">农田测绘</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <string name="setting_language_auto">跟随系统</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_simplified_chinese">简体中文</string>
+    <string name="setting_traditional_chinese">繁體中文</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="title_other_devices">Other Available Devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+
+    <!-- 动画 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox" tools:ignore="NewApi">
+        <item name="android:colorControlActivated" tools:ignore="NewApi">@color/green2</item>
+        <item name="android:colorControlNormal">#00000000</item>
+    </style>
+
+
+     <style name="dialogstyle">
+         <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+         <!-- 指定显示的动画xml -->
+         <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+         <!-- 指定消失的动画xml -->
+     </style>
+
+    <!-- StartActivity -->
+    <string name="startActivity_tab_tv1">RTK手持杖</string>
+    <string name="startActivity_tab_tv2">GPS测绘器</string>
+    <string name="startActivity_tab_tv3">GPS飞机</string>
+    <string name="startActivity_tab_tv4">手动取点</string>
+    <string name="startActivity_but">开始测绘</string>
+
+    <!-- Toast -->
+    <string name="toast_spl_un">数据库创建失败</string>
+    <string name="toast_1">请连接测绘器</string>
+    <string name="toast_2">当前设备工作模式不支持通道切换</string>
+    <string name="toast_3">请连接测绘器</string>
+    <string name="toast_4">当前设备非测绘模式，如需使用请在“基站设置”中调整模式</string>
+    <string name="toast_5">连接失败，请重试</string>
+    <string name="toast_6">通道设置失败，请重试</string>
+    <string name="toast_7">通道设置成功</string>
+    <string name="toast_8">一个任务最多只支持10个障碍物</string>
+    <string name="toast_9">请至少标记3个边界点</string>
+    <string name="toast_10">一个障碍区域请至少标记3个障碍点</string>
+    <string name="toast_11">测绘器启动中，请稍等</string>
+    <string name="toast_12">测绘器数据不稳定，请稍等</string>
+    <string name="toast_13">在机场禁飞区，不能打点</string>
+    <string name="toast_14">与上一点距离过近，不能打点</string>
+    <string name="toast_15">与其他障碍物过近</string>
+    <string name="toast_16">障碍相交，不能生成，建议合并</string>
+    <string name="toast_17">请输入任务名</string>
+    <string name="toast_18">操作失败，请重试</string>
+    <string name="toast_19">操作成功</string>
+    <string name="toast_20">删除成功</string>
+    <string name="toast_21">"网络连接超时，请稍后重试</string>
+    <string name="toast_22">您的身份验证出问题了，请检查后重试</string>
+    <string name="toast_23">请登录天麒服务</string>
+    <string name="toast_24">蓝牙未启用</string>
+    <string name="toast_25">蓝牙连接失败</string>
+    <string name="toast_26">连接关闭失败</string>
+    <string name="toast_27">usb断开了</string>
+    <string name="toast_28">usb连接了</string>
+    <string name="toast_29">USB未连接</string>
+
+    <!-- RecordAdapter -->
+    <string name="recordadapter_tv1">亩</string>
+    <string name="recordadapter_tv2">测绘面积 / 亩</string>
+    <string name="recordadapter_tv3">本地</string>
+
+    <!-- drawerlayout -->
+    <string name="drawerlayout_tv1">早上好,</string>
+    <string name="drawerlayout_tv2">上午好,</string>
+    <string name="drawerlayout_tv3">下午好,</string>
+    <string name="drawerlayout_tv4">晚上好,</string>
+    <string name="drawerlayout_tv5">首页</string>
+    <string name="drawerlayout_tv6">连接测绘器</string>
+    <string name="drawerlayout_tv7">测绘记录</string>
+    <string name="drawerlayout_tv8">设置</string>
+    <string name="drawerlayout_tv9">放弃本次测绘</string>
+
+    <!-- topbar -->
+    <string name="topbar_tv1">未连接测绘器</string>
+
+    <!-- continuePopu -->
+    <string name="continuePopu_tv1">提示</string>
+    <string name="continuePopu_tv2">您正在测绘，开始测绘后当前任务会丢失，确定要开始新的任务吗?</string>
+    <string name="continuePopu_tv3">开始新任务</string>
+    <string name="continuePopu_tv4">继续当前任务</string>
+    <string name="continuePopu_tv5">您的设备不是最新版本，请去固件中心升级</string>
+    <string name="continuePopu_tv6">知道了</string>
+    <string name="continuePopu_tv7">确定要删除本条记录?</string>
+    <string name="continuePopu_tv8">点错了</string>
+    <string name="continuePopu_tv9">确定</string>
+    <string name="continuePopu_tv10">确认放弃任务</string>
+    <string name="continuePopu_tv11">您确认要放弃本次任务吗?</string>
+    <string name="continuePopu_tv12">取消</string>
+    <string name="continuePopu_tv13">您正在测绘，开始测绘后当前任务会丢失，确定要开始新的任务吗？?</string>
+    <string name="continuePopu_tv14">继续当前任务</string>
+    <string name="continuePopu_tv15">确定修改</string>
+    <string name="continuePopu_tv16">重试</string>
+
+    <!--ParticularsActivity-->
+    <string name="ParticularsActivity_tv1">!正在读取设备信息，请稍后</string>
+    <string name="ParticularsActivity_tv2">设备不是手持杖模式</string>
+    <string name="ParticularsActivity_tv3">未连接测绘器</string>
+
+    <!--MappingRecordActivity-->
+    <string name="MappingRecordActivity_tv1">测绘记录</string>
+
+    <!--EquipmentActivity-->
+    <string name="EquipmentActivity_tv1">连接测绘器</string>
+    <string name="EquipmentActivity_tv2">正在连接</string>
+    <string name="EquipmentActivity_tv3">已连接</string>
+    <string name="EquipmentActivity_tv4">断开连接</string>
+    <string name="EquipmentActivity_tv5">连接</string>
+    <string name="EquipmentActivity_tv6">通道</string>
+
+    <!--SetChannelActivity-->
+    <string name="SetChannelActivity_tv1">当前通道</string>
+    <string name="SetChannelActivity_tv2">最近通道 0</string>
+    <string name="SetChannelActivity_tv3">正在设置信道</string>
+
+    <!--OsmFragment-->
+    <string name="OsmFragment_tv1">需要定位权限来获取当地天气信息</string>
+    <string name="OsmFragment_tv2">需要定位权限来获取当地天气信息,但是该权限被禁止,你可以到设置中更改</string>
+    <string name="OsmFragment_tv3">去设置</string>
+
+
+    <!--DotActivity-->
+
+    <string name="DotActivity_tv1">完成</string>
+    <string name="DotActivity_tv2">撤销</string>
+    <string name="DotActivity_tv3">！手持杖不正常</string>
+    <string name="DotActivity_tv4">边界点</string>
+    <string name="DotActivity_tv5">障碍点</string>
+    <string name="DotActivity_tv6">打点</string>
+    <string name="DotActivity_tv7">任务名</string>
+    <string name="DotActivity_tv8">请输入任务名</string>
+    <string name="DotActivity_tv9">取消</string>
+    <string name="DotActivity_tv10">保存</string>
+    <string name="DotActivity_tv11">测绘面积 / 亩</string>
+    <string name="DotActivity_tv12">返回</string>
+    <string name="DotActivity_tv13">更多</string>
+    <string name="DotActivity_tv14">正在完成</string>
+    <string name="DotActivity_tv15">修改</string>
+    <string name="DotActivity_tv16">在此点前插入点</string>
+    <string name="DotActivity_tv17">点击要删除的点</string>
+    <string name="DotActivity_tv18">RTK不为4</string>
+    <string name="DotActivity_tv19">完成</string>
+
+    <!--LoginActivity-->
+    <string name="LoginActivity_tv1">正在下载</string>
+    <string name="LoginActivity_tv2">下载完成</string>
+    <string name="LoginActivity_tv3">下载完成，请前去安装</string>
+    <string name="LoginActivity_tv4">没有团队！</string>
+    <string name="LoginActivity_tv5">您没有加入任何团队，请使用天麒服务APP加入团队</string>
+    <string name="LoginActivity_tv6">打开天麒服务</string>
+    <string name="LoginActivity_tv7">没有用户信息,请去天麒服务检查</string>
+    <string name="LoginActivity_tv8">出错了，请重新启动</string>
+    <string name="LoginActivity_tv9">更新</string>
+    <string name="LoginActivity_tv10">检测到新版本，是否下载更新？</string>
+    <string name="LoginActivity_tv11">下载天麒服务</string>
+    <string name="LoginActivity_tv12">使用天麒其他应用</string>
+    <string name="LoginActivity_tv13">请使用天麒服务登录您的账号</string>
+    <string name="LoginActivity_tv14">再按一次退出</string>
+
+    <!--DeviceListActivity-->
+    <string name="DeviceListActivity_tv1">未找到已匹配的设备</string>
+    <string name="DeviceListActivity_tv2">蓝牙连接</string>
+    <string name="DeviceListActivity_tv3">未发现设备</string>
+    <string name="DeviceListActivity_tv4">搜索设备</string>
+    <string name="DeviceListActivity_tv5">已配对设备</string>
+    <string name="DeviceListActivity_tv6">搜索到的设备</string>
+    <string name="DeviceListActivity_tv7">蓝牙不支持使用</string>
+    <string name="DeviceListActivity_tv8">蓝牙</string>
+    <string name="DeviceListActivity_tv9">确定</string>
+    <string name="DeviceListActivity_tv10">不稳定，请稍等后重试</string>
+
+    <!--BlueBase-->
+    <string name="BlueBase_tv1">无法初始化蓝牙</string>
+    <string name="BlueBase_tv2">请开启蓝牙</string>
+    <string name="BlueBase_tv3">蓝牙断连了</string>
+    <string name="BlueBase_tv4">选择测绘方式</string>
+    <string name="BlueBase_tv5">修改</string>
+    <string name="BlueBase_tv6">删除</string>
+    <string name="BlueBase_tv7">取消</string>
+    <string name="BlueBase_tv8">暂无打点记录</string>
+
+    <string name="UAVActivity_tv13">未连接飞机</string>
+    <string name="blueconnectActiivtyTV1">设备列表</string>
+
+
+    <string name="hand_mode1">手持杖</string>
+    <string name="hand_mode2">基站</string>
+    <string name="hand_mode3">卫星数</string>
+    <string name="hand_mode4">精度</string>
+    <string name="hand_mode5">RTK</string>
+    <string name="hand_mode6">下一步</string>
+    <string name="hand_mode7">上一步</string>
+    <string name="hand_mode8">连接断开了</string>
+    <string name="hand_mode9">纬度</string>
+    <string name="hand_mode10">经度</string>
+    <string name="hand_mode11">高程</string>
+
+    <string name="ConnectBLEActivity_tv1">工作模式</string>
+    <string name="ConnectBLEActivity_tv3">用于架设在固定位置，向附近广播坐标数据</string>
+    <string name="ConnectBLEActivity_tv5">用于测量田地边界，确定农田障碍物</string>
+    <string name="ConnectBLEActivity_tv6">通道设置</string>
+    <string name="ConnectBLEActivity_tv8">请确保现在没有正在使用基站的飞行器，并且附近没有其他使用相同通道号的基站</string>
+    <string name="ConnectBLEActivity_tv19">请确保附近没有其他使用相同通道号的基站</string>
+    <string name="ConnectBLEActivity_tv9">正在设置信道至第</string>
+    <string name="ConnectBLEActivity_tv10">信道</string>
+    <string name="ConnectBLEActivity_tv11">信道设置失败</string>
+    <string name="ConnectBLEActivity_tv12">信道设置成功</string>
+    <string name="ConnectBLEActivity_tv16">正在刷新</string>
+    <string name="ConnectBLEActivity_tv17">数据刷新超时,请重启APP或设备</string>
+    <string name="ConnectBLEActivity_tv20">正在切换至基站</string>
+    <string name="ConnectBLEActivity_tv13">模式切换超时</string>
+    <string name="ConnectBLEActivity_tv14">模式切换成功</string>
+    <string name="ConnectBLEActivity_tv15">模式切换成功</string>
+    <string name="ConnectBLEActivity_tv21">请确保现在没有正在使用基站的飞行器</string>
+    <string name="ConnectBLEActivity_tv22">正在切换至手持杖</string>
+    <string name="LocationActivity_tv2">历史</string>
+    <string name="LocationActivity_tv5">获取离线位置</string>
+    <string name="LocationActivity_tv6">保存坐标</string>
+    <string name="SetLocationActivity_tv9">正在结算</string>
+    <string name="SetLocationActivity_tv13">结算超时</string>
+    <string name="SetLocationActivity_tv14">结算成功</string>
+    <string name="LocationActivity_tv10">坐标数据缺失，不能保存</string>
+    <string name="HistoryActivity_tv4">您确定要将该坐标设置到基站吗</string>
+    <string name="HistoryActivity_tv1">正在设置</string>
+    <string name="HistoryActivity_tv5">设置超时</string>
+    <string name="HistoryActivity_tv6">设置成功</string>
+    <string name="StartActivity_tv30">任务名</string>
+    <string name="StartActivity_tv31">所属区域</string>
+    <string name="StartActivity_tv32">设置到基站</string>
+    <string name="StartActivity_tv33">正在读取数据</string>
+    <string name="StartActivity_tv34">检查更新</string>
+
+
+</resources>

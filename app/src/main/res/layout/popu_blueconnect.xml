@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_connect_back"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginRight="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/list" />
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_gray3"
+                android:textSize="14sp"
+                android:text="@string/blueconnectActiivtyTV1" />
+
+            <ImageView
+                android:id="@+id/refresh_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/refresh" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_gray"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/blueconnect_rc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/blueconnect"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:background="@color/bbc2bb"
+            android:textColor="@color/white"
+            android:text="@string/EquipmentActivity_tv5" />
+    </LinearLayout>

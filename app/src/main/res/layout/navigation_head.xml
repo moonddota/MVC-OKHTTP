@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/l_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43.57dp"
+        android:layout_marginTop="81.7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/head_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下午好,"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.skylin.uav.drawforterrain.views.MarqueeTextView
+            android:layout_marginRight="3dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:id="@+id/head_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 马冬梅"
+            android:textColor="@color/white"
+            android:textSize="21.79sp" />
+    </LinearLayout>
+
+    <com.skylin.uav.drawforterrain.views.MarqueeTextView
+        android:layout_marginRight="3dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:id="@+id/head_tv_tid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81.7dp"
+        android:layout_marginLeft="43.57dp"
+        android:layout_marginTop="10dp"
+        android:text="植物保小分队"
+        android:textColor="#ccffffff"
+        android:textSize="17.43sp" />
+
+    <LinearLayout
+        android:id="@+id/nav_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="43.57dp"
+            android:src="@mipmap/nav_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.86dp"
+            android:text="@string/drawerlayout_tv5"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="43.57dp"
+            android:src="@mipmap/nav_connect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.86dp"
+            android:text="@string/drawerlayout_tv6"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_his"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="43.57dp"
+            android:src="@mipmap/nav_his" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.86dp"
+            android:text="@string/drawerlayout_tv7"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_seting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:gravity="center|left">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="43.57dp"
+            android:src="@mipmap/nav_seting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.86dp"
+            android:text="@string/drawerlayout_tv8"
+            android:textColor="@color/white"
+            android:textSize="17.43sp" />
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/abort"
+        android:layout_width="125.27dp"
+        android:layout_height="43.57dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="120dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="@string/drawerlayout_tv9"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:qmui_backgroundColor="@android:color/transparent"
+        app:qmui_borderColor="@color/white"
+        app:qmui_radiusBottomLeft="7dp"
+        app:qmui_radiusBottomRight="7dp"
+        app:qmui_radiusTopLeft="7dp"
+        app:qmui_radiusTopRight="7dp" />
+
+    <TextView
+        android:id="@+id/versionNmae_particulars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:gravity="center|bottom"
+        android:text="FMP农田测绘1.4.0"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+</LinearLayout>

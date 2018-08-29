@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ll_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:gravity="left|center"
+        android:paddingLeft="11dp"
+        android:text="@string/ConnectBLEActivity_tv1"
+        android:textColor="@color/text_gray"
+        android:textSize="10sp" />
+
+    <FrameLayout
+        android:id="@+id/set_base"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="11dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="@string/hand_mode2"
+                android:textColor="@color/text_gray3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="2dp"
+                android:text="@string/ConnectBLEActivity_tv3"
+                android:textColor="@color/text_gray5"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/is_base"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/icon_select"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11dp"
+        android:background="@color/tm_black" />
+
+    <FrameLayout
+        android:id="@+id/set_hand"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:paddingLeft="11dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="@string/hand_mode1"
+                android:textColor="@color/text_gray3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="2dp"
+                android:text="@string/ConnectBLEActivity_tv5"
+                android:textColor="@color/text_gray5"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/is_hand"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/icon_select"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:gravity="left|center"
+        android:paddingLeft="11dp"
+        android:text="@string/ConnectBLEActivity_tv6"
+        android:textColor="@color/text_gray"
+        android:textSize="10sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/connectble_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingRight="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:paddingLeft="11dp"
+            android:text="@string/ConnectBLEActivity_tv6"
+            android:textColor="@color/text_gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/base_history"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="11dp"
+            android:text="@string/LocationActivity_tv2"
+            android:textColor="@color/text_gray3"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode5"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/rtk_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:text=" "
+                    android:textColor="@color/text_gray3" />
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/tm_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode3"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/tev_satellites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:text=" "
+                    android:textColor="@color/text_gray3" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/tm_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode4"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/tev_hdop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:text=" "
+                    android:textColor="@color/text_gray3" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/tm_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode10"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/tev_lon"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:numeric="decimal"
+                    android:text=" "
+                    android:textColor="@color/text_gray3"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/tm_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode9"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/tev_lat"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:numeric="decimal"
+                    android:text=" "
+                    android:textColor="@color/text_gray3"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/tm_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/hand_mode11"
+                    android:textColor="@color/text_gray3" />
+
+                <TextView
+                    android:id="@+id/tev_alt"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:numeric="decimal"
+                    android:text=" "
+                    android:textColor="@color/text_gray3"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/base_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textSize="16sp"
+            android:background="#8e8ebea0"
+            android:id="@+id/set_self_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/LocationActivity_tv5" />
+
+        <Button
+            android:background="@color/green3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/save_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/LocationActivity_tv6" />
+    </LinearLayout>
+</LinearLayout>

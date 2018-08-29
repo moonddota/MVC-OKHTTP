@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:id="@+id/replace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_map_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="240dp"
+        android:layout_marginRight="10dp"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/demo_map_model"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/icon_trans"
+            android:elevation="3dp" />
+
+        <ImageButton
+            android:id="@+id/demo_location_dot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/icon_location_map"
+            android:elevation="3dp" />
+
+        <Button
+            android:id="@+id/alter"
+            android:text="点击"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:text="点击"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</FrameLayout>

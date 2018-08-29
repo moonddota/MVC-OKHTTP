@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:elevation="3dp"
+    android:background="@drawable/editsharp2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center|start"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv1_area"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:elevation="5dp"
+                android:gravity="center|left"
+                android:text="0.000"
+                android:textColor="@color/text_gray3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dot_tv_area_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:text="@string/recordadapter_tv1"
+                android:textColor="@color/text_gray3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="end"
+            android:id="@+id/commit_out"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hand_mode7"
+            android:gravity="end|center"
+            android:textColor="@color/green3"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="horizontal">
+         <TextView
+             android:layout_marginLeft="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:text="@string/DotActivity_tv7"
+             android:textColor="@color/text_gray3"
+             android:textSize="14sp" />
+         <EditText
+             android:inputType="textNoSuggestions"
+             android:id="@+id/commit_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center|start"
+             android:textSize="15.25dp"
+             android:layout_weight="1"
+             android:hint="@string/DotActivity_tv8"
+             android:maxLength="14"
+             android:textColor="@color/text_gray3"
+             android:textColorHint="@color/text_gray"
+             android:maxLines="1"
+             android:padding="10dp" />
+     </LinearLayout>
+    </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/commit_save"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/DotActivity_tv10"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@color/green3" />
+
+
+</LinearLayout>

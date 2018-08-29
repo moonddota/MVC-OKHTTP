@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_1"/>
+
+    <TextView
+        android:id="@+id/high_gga"
+        android:background="@color/white"
+        android:gravity="center|start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=" 当前："/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center|start"
+            android:text="纬度"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:gravity="center|start"
+            android:text="经度"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:gravity="center|start"
+            android:text="高程"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_high"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+  <Button
+      android:id="@+id/high_but"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/green3"
+      android:text="打 点"
+      android:textColor="@color/white"
+      android:textSize="22sp"/>
+
+
+</LinearLayout>

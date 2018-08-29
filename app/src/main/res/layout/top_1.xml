@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/darkblue"
+    android:orientation="horizontal"
+    android:paddingTop="24dp"
+    android:layout_height="68dp">
+
+    <FrameLayout
+        android:clickable="true"
+        android:id="@+id/lift_topbar"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/ic_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="21.79dp"
+            android:layout_gravity="center|left" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_weight="5"
+        android:textSize="20.7sp"
+        android:textColor="@color/white"
+        android:id="@+id/middle_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="我是中间" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textColor="@color/text_gray3"
+        android:clickable="true"
+        android:id="@+id/right_topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center|right"
+        android:text="刷新" />
+
+</LinearLayout>

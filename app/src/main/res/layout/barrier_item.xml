@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="55dp"
+    android:layout_height="65dp"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="10dp"
+    android:layout_gravity="center"
+    android:id="@+id/item"
+    android:elevation="3dp"
+    android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/editsharp7"
+            android:id="@+id/barrier_item_number"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|left"
+            android:gravity="center_horizontal|top"
+            android:paddingTop="10dp"
+            android:text="1"
+            android:textColor="@color/text_gray3"
+            android:textSize="17.43sp" />
+
+        <ImageButton
+            android:id="@+id/barrier_item_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/delete" />
+
+</FrameLayout>
